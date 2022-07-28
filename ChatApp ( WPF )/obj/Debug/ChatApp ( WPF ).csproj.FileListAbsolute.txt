@@ -1,0 +1,91 @@
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\bin\Debug\ChatApp ( WPF ).exe.config
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\bin\Debug\ChatApp ( WPF ).exe
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\bin\Debug\ChatApp ( WPF ).pdb
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\bin\Debug\AIMLBot.dll
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\bin\Debug\Bogus.dll
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\bin\Debug\MaterialDesignColors.dll
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\bin\Debug\Bogus.xml
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\bin\Debug\MaterialDesignColors.pdb
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\obj\Debug\ChatApp ( WPF ).csproj.SuggestedBindingRedirects.cache
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\obj\Debug\MainWindow.g.cs
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\obj\Debug\App.g.cs
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\obj\Debug\ChatApp ( WPF )_MarkupCompile.cache
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\obj\Debug\ChatApp ( WPF )_MarkupCompile.lref
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\obj\Debug\App.baml
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\obj\Debug\MainWindow.baml
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\obj\Debug\ChatApp ( WPF ).g.resources
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\obj\Debug\ChatApp___WPF__.Properties.Resources.resources
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\obj\Debug\ChatApp ( WPF ).csproj.GenerateResource.cache
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\obj\Debug\ChatApp ( WPF ).csproj.CoreCompileInputs.cache
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\obj\Debug\ChatApp ( WPF ).csproj.CopyComplete
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\obj\Debug\ChatApp ( WPF ).exe
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\obj\Debug\ChatApp ( WPF ).pdb
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\bin\Debug\MediaInfoX64.dll
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\bin\Debug\vcomp140.dll
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\bin\Debug\VisioForge_DXP64.dll
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\bin\Debug\VisioForge_MFP64.dll
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\bin\Debug\VisioForge_MFPX64.dll
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\bin\Debug\VisioForge_Audio_Enhancer_x64.ax
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\bin\Debug\VisioForge_Audio_Mixer_x64.ax
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\bin\Debug\VisioForge_BaseFilters_x64.ax
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\bin\Debug\VisioForge_Network_Streamer_Audio_x64.ax
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\bin\Debug\VisioForge_Network_Streamer_Video_x64.ax
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\bin\Debug\VisioForge_Video_Effects_Pro_x64.ax
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\bin\Debug\VisioForge_Video_Mixer_x64.ax
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\bin\Debug\GMFBridge_x64.ax
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\bin\Debug\MatroskaMuxer64.ax
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\bin\Debug\VisioForge_Decklink_Source_x64.ax
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\bin\Debug\VisioForge_LAME_x64.ax
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\bin\Debug\VisioForge_MJPEGDec_x64.ax
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\bin\Debug\VisioForge_MP3_Splitter_x64.ax
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\bin\Debug\VisioForge_Push_Video_Source_x64.ax
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\bin\Debug\VisioForge_RTSP_Sink_x64.ax
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\bin\Debug\VisioForge_Screen_Capture_DD_x64.ax
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\bin\Debug\VisioForge_SSF_Muxer_x64.ax
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\bin\Debug\VisioForge_WhatYouHear_Source_x64.ax
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\bin\Debug\gdcl_mp4demux_x64.dll
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\bin\Debug\libmfxsw64.dll
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\bin\Debug\VisioForge_MFT64.dll
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\bin\Debug\VisioForge_AAC_Encoder_v10_x64.ax
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\bin\Debug\VisioForge_AAC_Encoder_x64.ax
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\bin\Debug\VisioForge_Encryptor_v8_x64.ax
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\bin\Debug\VisioForge_Encryptor_v9_x64.ax
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\bin\Debug\VisioForge_H264_Decoder_x64.ax
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\bin\Debug\VisioForge_H264_Encoder_v9_x64.ax
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\bin\Debug\VisioForge_H264_Encoder_x64.ax
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\bin\Debug\VisioForge_MF_Mux_x64.ax
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\bin\Debug\VisioForge_MP4_Muxer_v10_x64.ax
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\bin\Debug\VisioForge_MP4_Muxer_x64.ax
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\bin\Debug\VisioForge_NVENC_x64.ax
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\bin\Debug\System.Buffers.dll
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\bin\Debug\System.Memory.dll
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\bin\Debug\System.Text.Json.dll
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\bin\Debug\System.ValueTuple.dll
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\bin\Debug\VisioForge.Core.dll
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\bin\Debug\VisioForge.Libs.dll
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\bin\Debug\VisioForge.MediaFramework.dll
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\bin\Debug\VisioForge.Types.dll
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\bin\Debug\System.Buffers.xml
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\bin\Debug\System.Memory.xml
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\bin\Debug\System.Text.Json.xml
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\bin\Debug\System.ValueTuple.xml
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\obj\Debug\VideoCallWindow.g.cs
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\obj\Debug\VideoCallWindow.baml
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\bin\Debug\Faker.Net.4.7.dll
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\bin\Debug\de-DE\Faker.Net.4.7.resources.dll
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\obj\Debug\ChatApp ( WPF ).csproj.AssemblyReference.cache
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\obj\Debug\CallWindow.g.cs
+C:\Users\babas\Documents\Step IT Academy\WPF\ChatApp ( WPF )\ChatApp ( WPF )\obj\Debug\CallWindow.baml

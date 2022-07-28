@@ -1,0 +1,126 @@
+﻿<Window x:Class="ChatApp___WPF__.CallWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:ChatApp___WPF__"
+        mc:Ignorable="d"
+        AllowsTransparency="True"
+        MouseDown="Window_MouseDown"
+        WindowStyle="None"
+        Background="Transparent"
+        Title="CallWindow" Height="80" Width="550">
+    <Grid>
+        <Border>
+            <Border.Style>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="Effect">
+                        <Setter.Value>
+                            <DropShadowEffect BlurRadius="20" ShadowDepth="6" Direction="-90" Color="Black"/>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Border.Style>
+            <Grid>
+                <Rectangle Fill="#FF202C33" RadiusX="20" RadiusY="20" Height="70" Width="auto" VerticalAlignment="Top"/>
+    
+                <Grid Margin="0, 0, 0, 10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="6*"/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="0.4*"/>
+                    </Grid.ColumnDefinitions>
+                    <Ellipse Grid.Column="0" Width="50" Height="50">
+                        <Ellipse.Fill>
+                            <ImageBrush ImageSource="{Binding imageSource}"/>
+                        </Ellipse.Fill>
+                    </Ellipse>
+                    <StackPanel Grid.Column="1" Orientation="Vertical">
+                        <Label Foreground="White"  FontFamily="Microsoft YaHei UI" FontSize="14" FontWeight="Bold" Content="{Binding fullname}" HorizontalAlignment="Left" Margin="0, 10, 0, 0"/>
+                        <Label Foreground="#FFA4A4A4"  FontFamily="Microsoft YaHei UI" FontSize="10" Content="Calling..." HorizontalAlignment="Left"/>
+                    </StackPanel>
+                    <Button
+                        x:Name="btn_camera"
+                        Grid.Column="2"
+                        Width="50" 
+                        Height="40"
+                        IsEnabled="False"
+                        Background="Transparent"
+                        BorderThickness="0" 
+                        VerticalAlignment="Center" 
+                        HorizontalAlignment="Center">
+                        <materialDesign:PackIcon 
+                            Width="20" 
+                            Height="20" 
+                            VerticalAlignment="Center" 
+                            HorizontalAlignment="Center" 
+                            Kind="Video" 
+                            Foreground="#FFA4A4A4" />
+                    </Button>
+                    <Button
+                        Name="btn_microphone"
+                        Click="btn_microphone_Click"
+                        Grid.Column="3"
+                        Width="50" 
+                        Height="40"
+                        Background="Transparent"
+                        BorderThickness="0" 
+                        VerticalAlignment="Center" 
+                        HorizontalAlignment="Center">
+                        <materialDesign:PackIcon 
+                            x:Name="icon_microphone"
+                            Width="20" 
+                            Height="20" 
+                            VerticalAlignment="Center" 
+                            HorizontalAlignment="Center" 
+                            Kind="Microphone" 
+                            Foreground="#FFA4A4A4" />
+                    </Button>
+                    <Button
+                        Grid.Column="4"
+                        Width="50" 
+                        Height="50"
+                        Background="Transparent"
+                        BorderThickness="0" 
+                        VerticalAlignment="Center" 
+                        HorizontalAlignment="Center">
+                        <materialDesign:PackIcon 
+                            Width="20" 
+                            Height="20" 
+                            VerticalAlignment="Center" 
+                            HorizontalAlignment="Center" 
+                            Kind="DotsHorizontal" 
+                            Foreground="#FFA4A4A4" />
+                    </Button>
+                    <Border
+                        VerticalAlignment="Center" 
+                        HorizontalAlignment="Center"
+                        CornerRadius="10"
+                        Grid.Column="5"
+                        Width="50" 
+                        Height="35"
+                        Background="DarkRed">
+                        <Button
+                            Click="Button_Click"
+                            Background="Transparent"
+                            BorderThickness="0">
+                            <materialDesign:PackIcon 
+                                Width="20" 
+                                Height="20" 
+                                VerticalAlignment="Center" 
+                                HorizontalAlignment="Center" 
+                                Kind="PhoneHangupOutline" 
+                                Foreground="#FFA4A4A4" />
+                        </Button>
+                    </Border>
+                </Grid>
+            </Grid>
+        </Border>
+    </Grid>
+    
+</Window>

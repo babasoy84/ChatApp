@@ -1,0 +1,462 @@
+﻿<Window x:Class="ChatApp___WPF__.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ChatApp___WPF__"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        Name="mainWindow"
+        AllowsTransparency="True"
+        Background="Transparent"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        FontSize="15"
+        Height="668"
+        Width="1250"
+        Title="ChatApp" Icon="/ChatAppLogo.png">
+    <Border
+        CornerRadius="20"
+        Background="#FF202C33">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <!--Title-->
+            <Border
+                Background="#49a078"
+                CornerRadius="20, 20, 0, 0"
+                Grid.ColumnSpan="3"
+                Height="40"
+                MouseDown="Border_MouseDown">
+                <Grid>
+                    <TextBlock
+                        Text="{Binding Title, ElementName=mainWindow}"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Margin="15, 0"
+                        Foreground="White"
+                        FontFamily="Microsoft YaHei UI"
+                        FontSize="20"
+                        FontWeight="Bold"/>
+
+                    <!--Window Buttons-->
+                    <StackPanel 
+                        HorizontalAlignment="Right"
+                        Margin="10, 0"
+                        Orientation="Horizontal">
+                        <Button 
+                            x:Name="btnMinimize"
+                            Background="Transparent"
+                            BorderThickness="0"
+                            Click="btnMinimize_Click">
+                            <materialDesign:PackIcon
+                              Kind="WindowMinimize"/>
+                        </Button>
+                        <Button 
+                            x:Name="btnMaximize"
+                            Background="Transparent"
+                            BorderThickness="0"
+                            Click="btnMaximize_Click">
+                            <materialDesign:PackIcon
+                              Kind="WindowMaximize"/>
+                        </Button>
+                        <Button 
+                            x:Name="btnClose"
+                            Background="Transparent"
+                            BorderThickness="0"
+                            Click="btnClose_Click">
+                            <materialDesign:PackIcon
+                              Kind="WindowClose"/>
+                        </Button>
+                    </StackPanel>
+                </Grid>
+            </Border>
+            <Grid Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="70"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="400"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <StackPanel Orientation="Horizontal" Background="Transparent">
+                    <materialDesign:ColorZone
+                      Background="Transparent"
+                      Padding="16">
+                        <DockPanel>
+                            <StackPanel
+                          Orientation="Horizontal"
+                          materialDesign:RippleAssist.IsCentered="True">
+                                <Button
+                                    Background="Transparent"
+                                    BorderThickness="0">
+                                    <materialDesign:PackIcon Kind="Menu" Foreground="#FFA7A7A7" Width="30" Height="30" VerticalAlignment="Center">
+                                    </materialDesign:PackIcon>
+                                </Button>
+                                <materialDesign:ColorZone
+                            Mode="Standard"
+                            Padding="8 4 8 4"
+                            CornerRadius="2"
+                            Panel.ZIndex="1"
+                            Margin="16 0 0 0"
+                            materialDesign:ShadowAssist.ShadowDepth="Depth1" Background="#FF2A3942">
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition
+                                  Width="Auto" />
+                                            <ColumnDefinition
+                                  Width="*" />
+                                            <ColumnDefinition
+                                  Width="Auto" />
+                                        </Grid.ColumnDefinitions>
+                                        <Button
+                                Style="{StaticResource MaterialDesignToolButton}">
+                                            <materialDesign:PackIcon
+                                  Kind="Search"
+                                  Opacity=".56" />
+                                        </Button>
+                                        <TextBox
+                                Name="txtBox_search"
+                                Foreground="White"
+                                Grid.Column="1"
+                                Margin="8 0 0 0"
+                                materialDesign:HintAssist.Hint="Search"
+                                materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
+                                BorderThickness="0"
+                                MinWidth="200"
+                                MaxWidth="200"
+                                VerticalAlignment="Center" TextChanged="TextBox_TextChanged" />
+                                        <Button
+                                Style="{StaticResource MaterialDesignToolButton}"
+                                Grid.Column="2">
+                                            <materialDesign:PackIcon
+                                  Kind="Microphone"
+                                  Opacity=".56"
+                                  Margin="8 0 0 0" />
+                                        </Button>
+                                    </Grid>
+                                </materialDesign:ColorZone>
+                            </StackPanel>
+                        </DockPanel>
+                    </materialDesign:ColorZone>
+                </StackPanel>
+                <Grid Grid.Column="1" DataContext="{Binding ElementName=listBox_contacts, Path=SelectedItem}" Background="Transparent">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="70"></ColumnDefinition>
+                        <ColumnDefinition Width="5*"></ColumnDefinition>
+                        <ColumnDefinition Width="2*"></ColumnDefinition>
+                        <ColumnDefinition Width="50"></ColumnDefinition>
+                        <ColumnDefinition Width="50"></ColumnDefinition>
+                        <ColumnDefinition Width="0.2*"></ColumnDefinition>
+                        <ColumnDefinition Width="50"></ColumnDefinition>
+                        <ColumnDefinition Width="50"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Ellipse Grid.Column="0" Width="50" Height="50">
+                        <Ellipse.Fill>
+                            <ImageBrush ImageSource="{Binding imageSource}"/>
+                        </Ellipse.Fill>
+                    </Ellipse>
+                    <Label 
+                        Grid.Column="1"
+                        VerticalAlignment="Center" 
+                        FontFamily="Microsoft YaHei UI" 
+                        FontSize="17" FontWeight="Bold"
+                        Foreground="White" 
+                        Content="{Binding fullName}"/>
+                    <Button 
+                        Name="btn_videoCall"
+                        Click="btn_videoCall_Click"
+                        Grid.Column="3"
+                        Width="50" 
+                        Height="50"
+                        Background="Transparent"
+                        BorderThickness="0" 
+                        VerticalAlignment="Center" 
+                        HorizontalAlignment="Right">
+                        <materialDesign:PackIcon 
+                            Width="20" 
+                            Height="20" 
+                            VerticalAlignment="Center" 
+                            HorizontalAlignment="Center" 
+                            Kind="Video" 
+                            Foreground="#FFA4A4A4" />
+                    </Button>
+                    <Button 
+                        Name="btn_call"
+                        Click="btn_call_Click"
+                        Grid.Column="4"
+                        Width="50"
+                        Height="50"
+                        Background="Transparent"
+                        BorderThickness="0" 
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Right">
+                        <materialDesign:PackIcon 
+                            Width="20" 
+                            Height="20" 
+                            VerticalAlignment="Center" 
+                            HorizontalAlignment="Center" 
+                            Kind="Phone" 
+                            Foreground="#FFA4A4A4" />
+                    </Button>
+                    <Rectangle 
+                        VerticalAlignment="Center" 
+                        HorizontalAlignment="Center" 
+                        Grid.Column="5"
+                        Width="1" 
+                        Height="20" 
+                        Fill="#FFA4A4A4"/>
+                    <Button 
+                        Grid.Column="6" 
+                        Width="50" 
+                        Height="50" 
+                        Background="Transparent" 
+                        BorderThickness="0" 
+                        VerticalAlignment="Center" 
+                        HorizontalAlignment="Right">
+                        <materialDesign:PackIcon 
+                            Width="20" 
+                            Height="20" 
+                            VerticalAlignment="Center" 
+                            HorizontalAlignment="Center" 
+                            Kind="Magnify" 
+                            Foreground="#FFA4A4A4" />
+                    </Button>
+                    <Button 
+                        Grid.Column="7" 
+                        Width="50" 
+                        Height="50" 
+                        Background="Transparent" 
+                        BorderThickness="0" 
+                        VerticalAlignment="Center" 
+                        HorizontalAlignment="Right">
+                        <materialDesign:PackIcon 
+                            Width="20" Height="20" 
+                            VerticalAlignment="Center" 
+                            HorizontalAlignment="Center" 
+                            Kind="DotsVertical" 
+                            Foreground="#FFA4A4A4" />
+                    </Button>
+                </Grid>
+                <Grid Grid.Row="1" Grid.Column="1" DataContext="{Binding ElementName=listBox_contacts, Path=SelectedItem}">
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition Height="70"/>
+                    </Grid.RowDefinitions>
+                    <ListBox 
+                        Name="listBox_messages" 
+                        HorizontalContentAlignment="Stretch"
+                        ItemsSource="{Binding Messages , UpdateSourceTrigger=PropertyChanged}" 
+                        Padding="100">
+                        <ListBox.Background>
+                            <ImageBrush TileMode="None" Stretch="Fill" ImageSource="/ChatWallpaper.PNG">
+                                <ImageBrush.RelativeTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                                        <SkewTransform CenterX="0.5" CenterY="0.5"/>
+                                        <RotateTransform Angle="0" CenterX="0.5" CenterY="0.5"/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </ImageBrush.RelativeTransform>
+                            </ImageBrush>
+                        </ListBox.Background>
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <Border
+                                        Margin="80, 10"
+                                        HorizontalAlignment="{Binding horizontalAlignment}"
+                                        Padding="6"
+                                        CornerRadius="10, 10, 10, 10"
+                                        Background="{Binding color}">
+                                    <StackPanel Orientation="Horizontal">
+                                        <Label Margin="0, 0, 15, 0" Foreground="White" FontSize="14" FontFamily="Microsoft YaHei UI" VerticalContentAlignment="Top" Content="{Binding text}"/>
+                                        <Label Grid.Row="1" Grid.Column="1" Foreground="#FFA4A4A4" FontSize="10" FontFamily="Microsoft YaHei UI" VerticalContentAlignment="Bottom" Content="{Binding dateTime}"/>
+                                    </StackPanel>
+                                </Border>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+                    <Grid Name="emojiPicker" Visibility="Hidden" Width="330" Height="60" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="20,0,0,10">
+                        <Border>
+                            <Border.Style>
+                                <Style TargetType="{x:Type Border}">
+                                    <Setter Property="Effect">
+                                        <Setter.Value>
+                                            <DropShadowEffect BlurRadius="20" ShadowDepth="6" Direction="-90" Color="Black"></DropShadowEffect>
+                                        </Setter.Value>
+                                    </Setter>
+                                </Style>
+                            </Border.Style>
+                            <Grid>
+                                <Rectangle Fill="#FF202C33" RadiusX="20" RadiusY="20" Height="50" Width="auto" VerticalAlignment="Top"></Rectangle>
+
+                                <Rectangle Fill="#FF202C33" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0, 0, 300, -6" Height="20" Width="20">
+                                    <Rectangle.RenderTransform>
+                                        <RotateTransform Angle="-45"></RotateTransform>
+                                    </Rectangle.RenderTransform>
+                                </Rectangle>
+
+                                <UniformGrid Margin="0, 0, 0, 10" Columns="7">
+                                    <Image MouseDown="Emoji1_MouseDown" Width="25" Height="25" Source="/emoji1.png"></Image>
+                                    <Image MouseDown="Emoji2_MouseDown" Width="25" Height="25" Source="/emoji2.png"></Image>
+                                    <Image MouseDown="Emoji3_MouseDown" Width="25" Height="25" Source="/emoji3.png"></Image>
+                                    <Image MouseDown="Emoji4_MouseDown" Width="25" Height="25" Source="/emoji4.png"></Image>
+                                    <Image MouseDown="Emoji5_MouseDown" Width="25" Height="25" Source="/emoji5.png"></Image>
+                                    <Image MouseDown="Emoji6_MouseDown" Width="25" Height="25" Source="/emoji6.png"></Image>
+                                    <Image MouseDown="Emoji7_MouseDown" Width="25" Height="25" Source="/emoji7.png"></Image>
+                                </UniformGrid>
+                            </Grid>
+                        </Border>
+                    </Grid>
+                    <Border Grid.Row="1" Background="#FF202C33" CornerRadius="0, 0, 20, 0">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="auto"/>
+                                <ColumnDefinition Width="auto"/>
+                                <ColumnDefinition Width="10*"/>
+                                <ColumnDefinition Width="auto"/>
+                            </Grid.ColumnDefinitions>
+                            <Button
+                            Click="btn_emoji_Click"
+                            Name="btn_emoji"
+                            Margin="30, 10, 10, 10"
+                            Padding="0"
+                            Grid.Column="0"
+                            Background="Transparent"
+                            BorderThickness="0">
+                                <materialDesign:PackIcon
+                                Name="icon_emoji"
+                                HorizontalAlignment="Left"
+                                Kind="EmoticonOutline" 
+                                Foreground="#FFA7A7A7" 
+                                Width="30" 
+                                Height="40" 
+                                VerticalAlignment="Center">
+                                </materialDesign:PackIcon>
+                            </Button>
+                            <Button
+                            Grid.Column="1"
+                            Background="Transparent"
+                            BorderThickness="0"
+                            Padding="0"
+                            Margin="10">
+                                <materialDesign:PackIcon  Kind="AttachmentVertical" Foreground="#FFA7A7A7" Width="30" Height="30" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5">
+                                    <materialDesign:PackIcon.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform/>
+                                            <SkewTransform/>
+                                            <RotateTransform Angle="-149.123"/>
+                                            <TranslateTransform/>
+                                        </TransformGroup>
+                                    </materialDesign:PackIcon.RenderTransform>
+                                </materialDesign:PackIcon>
+                            </Button>
+                            <materialDesign:ColorZone
+                            Grid.Column="2"
+                            Background="Transparent"
+                            Padding="16">
+                                <Grid
+                                materialDesign:RippleAssist.IsCentered="True">
+                                    <materialDesign:ColorZone
+                                    Margin="0"
+                                    Mode="Standard"
+                                    Padding="8 4 8 4"
+                                    CornerRadius="2"
+                                    Panel.ZIndex="1"
+                                    materialDesign:ShadowAssist.ShadowDepth="Depth1" Background="#FF2A3942">
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="*" />
+                                                <ColumnDefinition Width="Auto" />
+                                            </Grid.ColumnDefinitions>
+                                            <TextBox
+                                            KeyDown="txtBox_message_KeyDown"
+                                            Name="txtBox_message"
+                                            Foreground="White"
+                                            Grid.Column="0"
+                                            Margin="8 0 0 0"
+                                            materialDesign:HintAssist.Hint="Write a message..."
+                                            materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
+                                            BorderThickness="0"
+                                            MinWidth="200"
+                                            VerticalAlignment="Center" />
+                                            <Button
+                                                Style="{StaticResource MaterialDesignToolButton}"
+                                                Grid.Column="1">
+                                                <materialDesign:PackIcon
+                                                    Kind="Microphone"
+                                                    Opacity=".56"
+                                                    Margin="8 0 0 0" />
+                                            </Button>
+                                        </Grid>
+                                    </materialDesign:ColorZone>
+                                </Grid>
+                            </materialDesign:ColorZone>
+                            <Button
+                            Click="btn_send_Click"
+                            Name="btn_send"
+                            Margin="0,8,15,8"
+                            Padding="0"
+                            Grid.Column="3"
+                            Background="Transparent"
+                            BorderThickness="0">
+                                <materialDesign:PackIcon
+                                HorizontalAlignment="Left"
+                                Kind="Send" 
+                                Foreground="#FFA7A7A7" 
+                                Width="20" 
+                                Height="20" 
+                                VerticalAlignment="Center">
+                                </materialDesign:PackIcon>
+                            </Button>
+                        </Grid>
+                    </Border>
+                </Grid>
+                <Border Background="#FF111B21" Grid.Row="1" CornerRadius="0, 0, 0, 20">
+                    <ListBox Name="listBox_contacts" ItemsSource="{Binding Contacts, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}">
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <Grid Width="380" Height="70" VerticalAlignment="Center">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition/>
+                                        <RowDefinition/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="70"/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+                                    <Ellipse
+                                    Width="50"
+                                    Height="50"
+                                    Grid.RowSpan="2">
+                                        <Ellipse.Fill>
+                                            <ImageBrush RenderOptions.BitmapScalingMode="Fant" ImageSource="{Binding imageSource}"></ImageBrush>
+                                        </Ellipse.Fill>
+                                    </Ellipse>
+                                    <Grid Grid.Column="1">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition Width="100"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Label Foreground="White" FontFamily="Microsoft YaHei UI" FontSize="17" Content="{Binding fullName}"></Label>
+                                        <Label Margin="0, 0, 15, 0" Grid.Column="1" HorizontalAlignment="Right" Foreground="#FFA4A4A4" FontFamily="Microsoft YaHei UI" FontSize="13" Content="{Binding lastDateTime, UpdateSourceTrigger=PropertyChanged}"></Label>
+                                    </Grid>
+                                    <Label Grid.Row="1" Grid.Column="1" Foreground="#FFA4A4A4" FontFamily="Microsoft YaHei UI" FontSize="13" Content="{Binding lastMessage, UpdateSourceTrigger=PropertyChanged}"></Label>
+                                </Grid>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+                </Border>
+            </Grid>
+        </Grid>
+    </Border>
+</Window>
